@@ -8,7 +8,7 @@ if(isset($_GET["out"])){
 }
 
 if($flag!=1){
-    $link=mysqli_connect('localhost','root','','medicalRobot');
+    $link=mysqli_connect('localhost','root','fangyu2018','medicalRobot');
     if(isset($_COOKIE['uname'])){
         $name=$_COOKIE['uname'];
         $query=mysqli_query($link,"SELECT username FROM userinfo WHERE username = '$name'");

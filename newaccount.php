@@ -2,7 +2,7 @@
 $username=$_POST['name'];
 $password=$_POST['password'];
 
-$con=mysqli_connect("localhost","root","","medicalRobot");
+$con=mysqli_connect("localhost","root","fangyu2018","medicalRobot");
 if (!$con){
 	die('Could not connect: ' . mysqli_error());
 }

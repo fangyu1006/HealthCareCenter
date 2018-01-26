@@ -1,8 +1,8 @@
-<?php
+i<?php
 $username=$_POST['username'];
 $password=$_POST['password'];
 
-$link = mysqli_connect('localhost','root','','medicalRobot');
+$link = mysqli_connect('localhost','root','fangyu2018','medicalRobot');
 $query=mysqli_query($link,"SELECT username,password FROM userinfo WHERE username = '$username'");
 $row = mysqli_fetch_array($query);
 if($_POST['submit']){    
