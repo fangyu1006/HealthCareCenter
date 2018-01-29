@@ -2,7 +2,7 @@
 <html lang="en" class="js">
 <head>
 	<meta charset="UTF-8">
-	<title>Medical Robot</title>
+	<title>HealthCare Center</title>
 	<meta name="viewport" content="initial-scale=1.0, width=device-width"/>
 	
 	<!-- Style Sheet -->
@@ -90,7 +90,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-offset-0">
-					<form name="form" class="login-form" method="post" action="newaccount.php" autocomplete="off" onSubmit="return check();">
+					<form name="form" class="login-form" >
 						<div class="form-group input-block">
 							<label for="name">Name</label>
 							<input type="text" name="name" class="form-control" id="name" required>
@@ -103,21 +103,10 @@
 							<label for="password2">Confirm Your Password</label>
 							<input type="password" name="password2" class="form-control" id="password2" required>
 						</div>
-						<div class="form-group radio-button">
-							<label class="radio-label">Gender: </label>
-							<div class="btn-group" data-toggle="buttons">
-								<label class="btn btn-default active">Male
-									<input type="radio" name="gender" id="male" autocomplete="off" chacked>
-									<i class="fa fa-check"></i>
-								</label>
-								<label class="btn btn-default">Female
-									<input type="radio" name="gender" id="female" autocomplete="off">
-									<i class="fa fa-check"></i>
-								</label>						
-							</div>
-						</div>						
+						<p id="RegError" style="color:red;"></p>
+
 						<div class="text-center">
-							<button type="submit" id="register-button" name="submit" value="submit" class="btn btn-gray">Register</button>
+							<button type="button" onclick="btn_register()" id="register-button" name="register" value="register" class="btn btn-gray">Register</button>
 						</div>
 					</form>
 				</div>
@@ -127,19 +116,6 @@
 	<!-- Login Form -->
 	
 	<!-- Scripts -->
-	<script type="text/javascript">
-		function check()
-		{
-			alert("check!!");
-			echo "check";
-			if(form.password.value != form.password2.value)
-			{
-				alert("Your passwords are not the same!");
-				form.password.focus.
-				return false;
-			}	
-		}
-	</script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/jquery-1.11.3.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -149,6 +125,9 @@
 	<script src="js/bootstrap-select.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
 	<script src="js/custom.js"></script>
+
+	<!-- login register JavaScript -->
+	<script src="js/login.js"></script>
 	
 
 	

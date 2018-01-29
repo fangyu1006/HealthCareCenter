@@ -103,7 +103,7 @@
 								</ul>
 								
 								<div class="user-acces pull-right">
-									<a href="index.php"><?php echo $_COOKIE['uname'];?></a>
+									<a href="index.php" id="username">UserName</a>
 									<span>&#47;</span>
 									<a href="welcome.html">Logout</a>
 								</div>
@@ -427,7 +427,7 @@
     </div>
 </div>
 
-
+<script src="js/getsession.js"></script>
 
 </body>
 

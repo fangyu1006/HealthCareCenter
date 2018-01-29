@@ -2,7 +2,7 @@
 <html lang="en" class="js">
 <head>
 	<meta charset="UTF-8">
-	<title>Medical Robot</title>
+	<title>HealthCare Center</title>
 	<meta name="viewport" content="initial-scale=1.0, width=device-width"/>
 	
 	<!-- Style Sheet -->
@@ -65,7 +65,7 @@
 								</ul>
 								
 								<div class="user-acces pull-right">
-									<a href="index.php"><?php echo $_COOKIE['uname'];?></a>
+									<a href="index.php" id="username">UserName</a>
 									<span>&#47;</span>
 									<a href="welcome.html">Logout</a>
 								</div>
@@ -97,6 +97,7 @@
 		</div>
 	</section>
 
+	<script src="js/getsession.js"></script>
 </body>
 
 </html>

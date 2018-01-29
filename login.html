@@ -2,7 +2,7 @@
 <html lang="en" class="js">
 <head>
 	<meta charset="UTF-8">
-	<title>Medical Robot</title>
+	<title>HealthCare Center</title>
 	<meta name="viewport" content="initial-scale=1.0, width=device-width"/>
 	
 	<!-- Style Sheet -->
@@ -19,29 +19,6 @@
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 
 	<script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
-
-	<script type="text/javascript">
-		
-		 
-		function check(){
-	    {
-		  if(form.username.value == "")//如果用户名为空
-		  {
-			alert("No user name!");
-			form.username.focus();
-			return false;
-		  }
-		  if(form.password.value == "")//如果密码为空
-		  {
-			alert("No password!");
-			myform.password.focus();
-			return false;
-		  }
-		}
-		
-		
-	</script>
-
 
 </head>
 <body>
@@ -112,7 +89,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-offset-0">
-					<form name='form' class="login-form" method="post" action='login.php' autocomplete="off" onSubmit="return check()">
+					<form name='form' class="login-form">
 						<div class="form-group input-block">
 							<label for="name">Name</label>
 							<input type="text" name="username" class="form-control" id="name" required>
@@ -121,9 +98,10 @@
 							<label for="password">Password</label>
 							<input type="password" name="password" class="form-control" id="password" required>
 						</div>
+						<p id="LogError" style="color:red;"></p>
 						
 						<div class="text-center">
-							<button type="submit" id="login-button" name="submit" value="submit" class="btn btn-gray">Login</button>
+							<button type="button" onclick="btn_login();" id="login-button" name="login" value="login" class="btn btn-gray">Login</button>
 						</div>
 					</form>
 				</div>
@@ -142,8 +120,8 @@
 	<script src="js/bootstrap-select.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
 	<script src="js/custom.js"></script>
-	
-	
+	<script src="js/login.js"></script>		
+		
 </body>
 
 </html>
